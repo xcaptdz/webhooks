@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-var request = require('request');
+const request = require('request');
 
 app.get('/',(req,res)=>{
    
