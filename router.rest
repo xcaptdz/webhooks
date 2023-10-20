@@ -1,0 +1,39 @@
+
+GET http://localhost:5000/webhooks
+
+###
+
+POST http://localhost:5000/webhooks
+
+Content-Type: application/json
+
+{
+    "name": "dsfdlasjkfhfchniurynjhkjfhasdlfhjdaslfkjh",
+    "hook": ""
+}
+
+
+###
+
+POST http://localhost:5000/webhooks HTTP/1.1
+content-type: application/json
+
+{
+    "hook": "wh_tvr_light",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+POST http://10.0.20.6:8123/api/webhook/wh_tvr_light 
+
+
+###
+
+
+POST https://hawh.xcapt.net/webhooks HTTP/1.1
+content-type: application/json
+
+{
+    "hook": "wh_tvr_light",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}

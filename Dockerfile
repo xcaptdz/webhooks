@@ -2,6 +2,8 @@ FROM node:20-alpine
 
 ENV HA_IP 10.0.20.6
 
+ENV NAME HaWebHooks
+
 WORKDIR /app
 
 COPY  . /app
@@ -9,8 +11,6 @@ COPY  . /app
 RUN npm install
 
 EXPOSE 5000 
-
-ENV NAME HaWebHooks
 
 CMD ["npm","start"]
 
